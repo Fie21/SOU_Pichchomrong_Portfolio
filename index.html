@@ -205,53 +205,98 @@
     <section id="skills-section" class="py-24 border-t border-white/5 bg-white/[0.02]">
       <div class="max-w-6xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto" data-reveal>
-          <p class="section-eyebrow">Skills</p>
+          <p class="section-eyebrow">Skills & Expertise</p>
           <h2 class="section-title">What I work with</h2>
+          <p class="mt-4 text-slate-400">Core pillars bridging quantitative finance, data intelligence, and engineering.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-x-16 gap-16 mt-16">
-          <div class="space-y-6" data-reveal>
-            <div class="skill-bar" data-level="90">
-              <div class="skill-bar-top"><span>Data Analyst</span><span class="skill-percent">90%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
+        <!-- 3 Core Capability Cards -->
+        <div class="grid md:grid-cols-3 gap-6 mt-16" data-reveal>
+          <!-- Pillar 1 -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 hover:border-brand-500/50 transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 text-xl mb-5">
+              <i class="fa-solid fa-chart-line"></i>
             </div>
-            <div class="skill-bar" data-level="85">
-              <div class="skill-bar-top"><span>Machine Learning</span><span class="skill-percent">85%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
+            <h3 class="font-display font-semibold text-white text-lg mb-2">Quantitative & Financial Modeling</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+              Applying mathematical frameworks, stochastic simulation, and optimization to financial instruments and markets.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Markowitz Portfolio Optimization</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Interest Rate Simulation (Dothan Model)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Zero-Coupon Bond Pricing & Yield Curves</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Linear Programming (Simplex Method)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Financial Risk & Return Analysis</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 hover:border-brand-500/50 transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 text-xl mb-5">
+              <i class="fa-solid fa-database"></i>
             </div>
-            <div class="skill-bar" data-level="80">
-              <div class="skill-bar-top"><span>Statistical and Probability</span><span class="skill-percent">80%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
+            <h3 class="font-display font-semibold text-white text-lg mb-2">Data Science & Analytics</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+              Extracting insights from complex datasets and building interactive business intelligence solutions.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Exploratory Data Analysis (EDA)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Probability & Statistical Inference</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Machine Learning Fundamentals</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Interactive Dashboards & KPI Tracking</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> SQL Queries & Relational Data Modeling</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 hover:border-brand-500/50 transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 text-xl mb-5">
+              <i class="fa-solid fa-code"></i>
             </div>
-            <div class="skill-bar" data-level="70">
-              <div class="skill-bar-top"><span>Web Development</span><span class="skill-percent">70%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
+            <h3 class="font-display font-semibold text-white text-lg mb-2">Software & Web Development</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+              Developing scalable web applications, automation scripts, and reproducible pipelines.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Full-Stack Web Development (Django)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Clean Architecture & MVC Patterns</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Responsive Frontends (HTML/CSS/JS)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Version Control & Git Collaboration</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> Systems Programming (C / C++)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tools, Technologies & Languages -->
+        <div class="grid md:grid-cols-2 gap-10 mt-12 pt-12 border-t border-white/10" data-reveal>
+          <div>
+            <h3 class="font-display font-semibold text-white text-lg mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-screwdriver-wrench text-brand-400 text-sm"></i> Tools & Technologies
+            </h3>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="tag-pill"><i class="fa-brands fa-python text-brand-400"></i> Python</span>
+              <span class="tag-pill"><i class="fa-solid fa-chart-bar text-amber-400"></i> Power BI</span>
+              <span class="tag-pill"><i class="fa-brands fa-r-project text-blue-400"></i> R</span>
+              <span class="tag-pill"><i class="fa-solid fa-database text-emerald-400"></i> SQL</span>
+              <span class="tag-pill"><i class="fa-brands fa-python text-emerald-300"></i> Django</span>
+              <span class="tag-pill"><i class="fa-brands fa-html5 text-orange-400"></i> HTML5</span>
+              <span class="tag-pill"><i class="fa-brands fa-css3-alt text-blue-400"></i> CSS3</span>
+              <span class="tag-pill"><i class="fa-brands fa-js text-yellow-400"></i> JavaScript</span>
+              <span class="tag-pill"><i class="fa-brands fa-git-alt text-red-400"></i> Git</span>
+              <span class="tag-pill"><i class="fa-brands fa-docker text-sky-400"></i> Docker</span>
+              <span class="tag-pill"><i class="fa-solid fa-file-excel text-emerald-500"></i> Excel</span>
+              <span class="tag-pill"><i class="fa-solid fa-code text-indigo-400"></i> C / C++</span>
             </div>
           </div>
 
-          <div data-reveal>
-            <h3 class="font-display font-semibold text-white text-lg mb-5">Tools & Technologies</h3>
-            <div class="flex flex-wrap gap-3">
-                <span class="tag-pill"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="tag-pill"><i class="fa-solid fa-chart-bar"></i> Power BI</span>
-                <span class="tag-pill"><i class="fa-brands fa-r-project"></i> R</span>
-                <span class="tag-pill"><i class="fa-solid fa-database"></i> SQL</span>
-                <span class="tag-pill"><i class="fa-brands fa-html5"></i> HTML</span>
-                <span class="tag-pill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                <span class="tag-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
-                <span class="tag-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
-                <span class="tag-pill"><i class="fa-brands fa-docker"></i> Docker</span>
-                <span class="tag-pill"><i class="fa-solid fa-file-excel"></i> Excel</span>
-                <span class="tag-pill"><i class="fa-solid fa-code"></i> C</span>
-                <span class="tag-pill"><i class="fa-solid fa-code"></i> C++</span>
-                <span class="tag-pill"><i class="fa-brands fa-python"></i> Django</span>
-            </div>
-
-            <h3 class="font-display font-semibold text-white text-lg mt-10 mb-5">Languages</h3>
-            <div class="flex flex-wrap gap-3">
-              <span class="tag-pill">Khmer — Mother Tongue</span>
-              <span class="tag-pill">English — B2</span>
-              <span class="tag-pill">French — B1</span>
+          <div>
+            <h3 class="font-display font-semibold text-white text-lg mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-language text-brand-400 text-sm"></i> Languages
+            </h3>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="tag-pill">🇰🇭 Khmer — Native / Mother Tongue</span>
+              <span class="tag-pill">🇬🇧 English — Professional Working (B2)</span>
+              <span class="tag-pill">🇫🇷 French — Intermediate (B1)</span>
             </div>
           </div>
         </div>
