@@ -309,44 +309,110 @@
         <div class="text-center max-w-2xl mx-auto" data-reveal>
           <p class="section-eyebrow">Experience & Education</p>
           <h2 class="section-title">My Journey & Milestones</h2>
-          <p class="mt-4 text-slate-400">Professional industry experience and academic training in financial engineering and data science.</p>
+          <p class="mt-4 text-slate-400">A chronological progression bridging foundational data science, quantitative modeling, government data engineering, and career launch.</p>
         </div>
 
-        <div class="mt-16 max-w-3xl mx-auto relative pl-10 border-l border-white/10 space-y-12">
-          <!-- GDDE Internship -->
-          <div class="timeline-item" data-reveal>
-            <span class="timeline-dot"></span>
-            <span class="timeline-date">August 2026 — October 2026</span>
-            <h3 class="timeline-title">Data Engineer Intern — General Department of Digital Economy (GDDE)</h3>
-            <p class="text-xs text-brand-400 font-medium mt-0.5">Ministry of Economy and Finance (MEF), Cambodia</p>
-            <p class="timeline-desc">
-              Engineered the end-to-end <strong>Cambodia International Trade Data Warehouse & Automated ETL Pipeline</strong>. Extracted 10 years (2016–2026) of official customs data across 4 statistical pillars, designed a 2-tier PostgreSQL dimensional star-schema with JSONB staging and upsert triggers, orchestrated automated ingestion with Apache Airflow & Docker, and deployed a live Streamlit dashboard featuring econometric forecasting models (SARIMAX, Holt-Winters).
-            </p>
-            <div class="flex gap-2 flex-wrap mt-3">
-              <span class="tag-pill small">Apache Airflow</span>
-              <span class="tag-pill small">PostgreSQL</span>
-              <span class="tag-pill small">Docker</span>
-              <span class="tag-pill small">Streamlit</span>
-              <span class="tag-pill small">Python</span>
-              <span class="tag-pill small">SARIMAX</span>
+        <!-- Horizontal Chronological Milestone Track -->
+        <div class="mt-16 milestone-track-wrapper" data-reveal>
+          <div class="milestone-track">
+            
+            <!-- Milestone 1 -->
+            <div class="milestone-card">
+              <div class="milestone-node">
+                <div class="milestone-dot">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <span class="milestone-date">2021 — 2023</span>
+              </div>
+              <div class="milestone-body">
+                <h3 class="milestone-title">Engineering Foundation & Data Science</h3>
+                <p class="milestone-org">Institute of Technology of Cambodia (ITC)</p>
+                <p class="milestone-desc">
+                  Completed rigorous foundational studies in advanced calculus, linear algebra, algorithms, and computational statistics. Developed core programming competence in Python, C/C++, and SQL while completing exploratory data analysis projects.
+                </p>
+                <div class="flex gap-1.5 flex-wrap mt-4 pt-3 border-t border-white/5">
+                  <span class="tag-pill small">Mathematics</span>
+                  <span class="tag-pill small">Python</span>
+                  <span class="tag-pill small">C / C++</span>
+                  <span class="tag-pill small">SQL</span>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <!-- ITC Year 5 Education -->
-          <div class="timeline-item" data-reveal>
-            <span class="timeline-dot"></span>
-            <span class="timeline-date">2021 — Present</span>
-            <h3 class="timeline-title">Engineering Degree in Financial Engineering (Year 5)</h3>
-            <p class="text-xs text-brand-400 font-medium mt-0.5">Institute of Technology of Cambodia (ITC) — Faculty of Applied Mathematics & Statistics</p>
-            <p class="timeline-desc">
-              Specializing in quantitative finance, stochastic calculus, mathematical modeling, and risk optimization. Transitioned with foundational training in Data Science, applying advanced algorithms, statistical inference, and computational mathematics to macroeconomic and market problems.
-            </p>
-            <div class="flex gap-2 flex-wrap mt-3">
-              <span class="tag-pill small">Quantitative Finance</span>
-              <span class="tag-pill small">Applied Mathematics</span>
-              <span class="tag-pill small">Stochastic Modeling</span>
-              <span class="tag-pill small">Data Science</span>
+            <!-- Milestone 2 -->
+            <div class="milestone-card">
+              <div class="milestone-node">
+                <div class="milestone-dot">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <span class="milestone-date">2024 — 2025</span>
+              </div>
+              <div class="milestone-body">
+                <h3 class="milestone-title">Quantitative & Financial Engineering Transition</h3>
+                <p class="milestone-org">Faculty of Applied Mathematics & Statistics</p>
+                <p class="milestone-desc">
+                  Advanced into quantitative finance. Built stochastic interest rate models (Dothan Model), CSX portfolio optimizations (Markowitz Mean-Variance framework), operations research linear programming (Simplex), and full-stack web platforms (Django).
+                </p>
+                <div class="flex gap-1.5 flex-wrap mt-4 pt-3 border-t border-white/5">
+                  <span class="tag-pill small">Quantitative Finance</span>
+                  <span class="tag-pill small">Markowitz</span>
+                  <span class="tag-pill small">Dothan</span>
+                  <span class="tag-pill small">Django</span>
+                </div>
+              </div>
             </div>
+
+            <!-- Milestone 3 -->
+            <div class="milestone-card">
+              <div class="milestone-node">
+                <div class="milestone-dot">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <span class="milestone-date">Aug — Oct 2026</span>
+              </div>
+              <div class="milestone-body border-brand-500/40 bg-brand-500/[0.03]">
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="milestone-title">Data Engineer Intern</h3>
+                  <span class="text-[9px] font-bold uppercase tracking-wider bg-brand-500/20 text-brand-300 border border-brand-500/30 px-2 py-0.5 rounded-full">Gov Internship</span>
+                </div>
+                <p class="milestone-org">General Dept. of Digital Economy (GDDE, MEF)</p>
+                <p class="milestone-desc">
+                  Architected the <strong>Cambodia International Trade Data Warehouse</strong>. Ingested 10 years of customs data, built 2-tier PostgreSQL star-schema with JSONB staging, orchestrated automated ETL via Apache Airflow in Docker, and built Streamlit forecasting (SARIMAX).
+                </p>
+                <div class="flex gap-1.5 flex-wrap mt-4 pt-3 border-t border-white/5">
+                  <span class="tag-pill small">Apache Airflow</span>
+                  <span class="tag-pill small">PostgreSQL</span>
+                  <span class="tag-pill small">Docker</span>
+                  <span class="tag-pill small">Streamlit</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="milestone-card">
+              <div class="milestone-node">
+                <div class="milestone-dot active-dot">
+                  <i class="fa-solid fa-rocket text-emerald-400"></i>
+                </div>
+                <span class="milestone-date text-emerald-400">2026 — Present</span>
+              </div>
+              <div class="milestone-body border-emerald-500/30 bg-emerald-500/[0.03]">
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="milestone-title">Year 5 Capstone & Career Launch</h3>
+                  <span class="text-[9px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full">Current Focus</span>
+                </div>
+                <p class="milestone-org">Institute of Technology of Cambodia (ITC)</p>
+                <p class="milestone-desc">
+                  Completing final-year engineering thesis and research. Actively seeking internship and junior/entry-level full-time roles in quantitative modeling, data engineering, financial analysis, and technology.
+                </p>
+                <div class="flex gap-1.5 flex-wrap mt-4 pt-3 border-t border-white/5">
+                  <span class="tag-pill small">Engineering Thesis</span>
+                  <span class="tag-pill small">Open to Roles</span>
+                  <span class="tag-pill small">Full-Time / Intern</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

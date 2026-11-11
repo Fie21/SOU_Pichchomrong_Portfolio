@@ -161,7 +161,137 @@ body {
   color: #7089ff;
 }
 
-/* ---------- Timeline ---------- */
+/* ---------- Horizontal Milestone Timeline ---------- */
+.milestone-track-wrapper {
+  position: relative;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(74,95,255,.4) rgba(255,255,255,.05);
+}
+.milestone-track-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.milestone-track-wrapper::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.05);
+  border-radius: 999px;
+}
+.milestone-track-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(74,95,255,.4);
+  border-radius: 999px;
+}
+
+.milestone-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  gap: 1.5rem;
+  min-width: 1040px;
+  padding-top: 2rem;
+}
+
+/* Horizontal connecting gradient line across nodes */
+.milestone-track::before {
+  content: '';
+  position: absolute;
+  top: calc(2rem + 15px);
+  left: 2rem;
+  right: 2rem;
+  height: 3px;
+  background: linear-gradient(90deg, #4a5fff, #a855f7 70%, #10b981);
+  z-index: 0;
+  border-radius: 999px;
+}
+
+.milestone-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.milestone-node {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+
+.milestone-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0f172a;
+  border: 3px solid #4a5fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: .75rem;
+  box-shadow: 0 0 0 6px rgba(74,95,255,.2), 0 0 20px rgba(74,95,255,.3);
+  transition: all .3s ease;
+  flex-shrink: 0;
+}
+.milestone-card:hover .milestone-dot {
+  transform: scale(1.15);
+  border-color: #a855f7;
+  box-shadow: 0 0 0 8px rgba(168,85,247,.25), 0 0 25px rgba(168,85,247,.5);
+}
+
+.milestone-dot.active-dot {
+  border-color: #10b981;
+  box-shadow: 0 0 0 6px rgba(16,185,129,.2), 0 0 20px rgba(16,185,129,.4);
+}
+
+.milestone-date {
+  font-size: .8rem;
+  font-weight: 700;
+  color: #9db3ff;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.milestone-body {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  transition: all .3s ease;
+}
+.milestone-body:hover {
+  border-color: rgba(74,95,255,.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(0,0,0,.5);
+}
+
+.milestone-title {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: .25rem;
+}
+
+.milestone-org {
+  font-size: .75rem;
+  color: #7089ff;
+  font-weight: 600;
+  margin-bottom: .75rem;
+}
+
+.milestone-desc {
+  color: #94a3b8;
+  font-size: .825rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Fallback for legacy timeline if needed */
 .timeline-item {
   position: relative;
 }
